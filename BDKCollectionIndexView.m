@@ -167,7 +167,7 @@
         tag = tag + 1;
         label.font = [UIFont boldSystemFontOfSize:12];
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
+        label.textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1.0];
         label.textAlignment = NSTextAlignmentCenter;
         [self addSubview:label];
         [workingLabels addObject:label];
@@ -190,7 +190,7 @@
 
 - (void)setBackgroundVisibility:(BOOL)flag {
     CGFloat alpha = flag ? 0.25 : 0;
-    self.touchStatusView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:alpha];
+    self.touchStatusView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:alpha];
 }
 
 #pragma mark - Gestures

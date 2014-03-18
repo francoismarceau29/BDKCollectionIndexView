@@ -129,7 +129,7 @@
 - (UIView *)touchStatusView {
     if (_touchStatusView) return _touchStatusView;
     _touchStatusView = [[UIView alloc] initWithFrame:CGRectInset(self.bounds, 2, 2)];
-    _touchStatusView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
+    _touchStatusView.backgroundColor = [[UIColor white] colorWithAlphaComponent:0];
     _touchStatusView.layer.cornerRadius = self.theDimension / 2;
     _touchStatusView.layer.masksToBounds = YES;
     return _touchStatusView;
@@ -167,7 +167,7 @@
         tag = tag + 1;
         label.font = [UIFont boldSystemFontOfSize:12];
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor colorWithRed:0.415 green:0.451 blue:0.490 alpha:1.0];
+        label.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
         label.textAlignment = NSTextAlignmentCenter;
         [self addSubview:label];
         [workingLabels addObject:label];

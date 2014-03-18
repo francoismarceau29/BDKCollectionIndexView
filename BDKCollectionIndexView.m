@@ -129,7 +129,7 @@
 - (UIView *)touchStatusView {
     if (_touchStatusView) return _touchStatusView;
     _touchStatusView = [[UIView alloc] initWithFrame:CGRectInset(self.bounds, 2, 2)];
-    _touchStatusView.backgroundColor = [[UIColor white] colorWithAlphaComponent:0];
+    _touchStatusView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0];
     _touchStatusView.layer.cornerRadius = self.theDimension / 2;
     _touchStatusView.layer.masksToBounds = YES;
     return _touchStatusView;
